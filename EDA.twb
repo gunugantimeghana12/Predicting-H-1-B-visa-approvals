@@ -1,0 +1,1315 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.20.0218.0709                               -->
+<workbook original-version='18.1' source-build='2019.2.9 (20192.20.0218.0709)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='H-1B_Disclosure_Data_18' inline='true' name='federated.0occcyx172db2z14r62yc1632rts' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='H-1B_Disclosure_Data_18' name='textscan.0sy41yj0nih7q411hy3bh0bdn1ps'>
+            <connection class='textscan' directory='C:/Users/gunaganti meghana/Desktop/GMU/COURSES/Spring 2020 OR 568/Assignments/FINAL PROJECT' filename='H-1B_Disclosure_Data_18.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0sy41yj0nih7q411hy3bh0bdn1ps' name='H-1B_Disclosure_Data_18.csv' table='[H-1B_Disclosure_Data_18#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='CASE_NUMBER' ordinal='0' />
+            <column datatype='string' name='CASE_STATUS' ordinal='1' />
+            <column datatype='date' name='CASE_SUBMITTED' ordinal='2' />
+            <column datatype='date' name='DECISION_DATE' ordinal='3' />
+            <column datatype='string' name='VISA_CLASS' ordinal='4' />
+            <column datatype='date' name='EMPLOYMENT_START_DATE' ordinal='5' />
+            <column datatype='date' name='EMPLOYMENT_END_DATE' ordinal='6' />
+            <column datatype='string' name='EMPLOYER_NAME' ordinal='7' />
+            <column datatype='string' name='EMPLOYER_BUSINESS_DBA' ordinal='8' />
+            <column datatype='string' name='EMPLOYER_ADDRESS' ordinal='9' />
+            <column datatype='string' name='EMPLOYER_CITY' ordinal='10' />
+            <column datatype='string' name='EMPLOYER_STATE' ordinal='11' />
+            <column datatype='integer' name='EMPLOYER_POSTAL_CODE' ordinal='12' />
+            <column datatype='string' name='EMPLOYER_COUNTRY' ordinal='13' />
+            <column datatype='string' name='EMPLOYER_PROVINCE' ordinal='14' />
+            <column datatype='real' name='EMPLOYER_PHONE' ordinal='15' />
+            <column datatype='integer' name='EMPLOYER_PHONE_EXT' ordinal='16' />
+            <column datatype='string' name='AGENT_REPRESENTING_EMPLOYER' ordinal='17' />
+            <column datatype='string' name='AGENT_ATTORNEY_NAME' ordinal='18' />
+            <column datatype='string' name='AGENT_ATTORNEY_CITY' ordinal='19' />
+            <column datatype='string' name='AGENT_ATTORNEY_STATE' ordinal='20' />
+            <column datatype='string' name='JOB_TITLE' ordinal='21' />
+            <column datatype='string' name='SOC_CODE' ordinal='22' />
+            <column datatype='string' name='SOC_NAME' ordinal='23' />
+            <column datatype='integer' name='NAICS_CODE' ordinal='24' />
+            <column datatype='integer' name='TOTAL_WORKERS' ordinal='25' />
+            <column datatype='integer' name='NEW_EMPLOYMENT' ordinal='26' />
+            <column datatype='integer' name='CONTINUED_EMPLOYMENT' ordinal='27' />
+            <column datatype='integer' name='CHANGE_PREVIOUS_EMPLOYMENT' ordinal='28' />
+            <column datatype='integer' name='NEW_CONCURRENT_EMP' ordinal='29' />
+            <column datatype='integer' name='CHANGE_EMPLOYER' ordinal='30' />
+            <column datatype='integer' name='AMENDED_PETITION' ordinal='31' />
+            <column datatype='string' name='FULL_TIME_POSITION' ordinal='32' />
+            <column datatype='real' name='PREVAILING_WAGE' ordinal='33' />
+            <column datatype='string' name='PW_UNIT_OF_PAY' ordinal='34' />
+            <column datatype='string' name='PW_WAGE_LEVEL' ordinal='35' />
+            <column datatype='string' name='PW_SOURCE' ordinal='36' />
+            <column datatype='integer' name='PW_SOURCE_YEAR' ordinal='37' />
+            <column datatype='string' name='PW_SOURCE_OTHER' ordinal='38' />
+            <column datatype='real' name='WAGE_RATE_OF_PAY_FROM' ordinal='39' />
+            <column datatype='real' name='WAGE_RATE_OF_PAY_TO' ordinal='40' />
+            <column datatype='string' name='WAGE_UNIT_OF_PAY' ordinal='41' />
+            <column datatype='string' name='H1B_DEPENDENT' ordinal='42' />
+            <column datatype='string' name='WILLFUL_VIOLATOR' ordinal='43' />
+            <column datatype='string' name='SUPPORT_H1B' ordinal='44' />
+            <column datatype='string' name='LABOR_CON_AGREE' ordinal='45' />
+            <column datatype='string' name='PUBLIC_DISCLOSURE_LOCATION' ordinal='46' />
+            <column datatype='string' name='WORKSITE_CITY' ordinal='47' />
+            <column datatype='string' name='WORKSITE_COUNTY' ordinal='48' />
+            <column datatype='string' name='WORKSITE_STATE' ordinal='49' />
+            <column datatype='integer' name='WORKSITE_POSTAL_CODE' ordinal='50' />
+            <column datatype='date' name='ORIGINAL_CERT_DATE' ordinal='51' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASE_NUMBER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CASE_NUMBER]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>CASE_NUMBER</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASE_STATUS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CASE_STATUS]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>CASE_STATUS</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASE_SUBMITTED</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[CASE_SUBMITTED]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>CASE_SUBMITTED</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DECISION_DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DECISION_DATE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>DECISION_DATE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VISA_CLASS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VISA_CLASS]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>VISA_CLASS</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYMENT_START_DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[EMPLOYMENT_START_DATE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYMENT_START_DATE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYMENT_END_DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[EMPLOYMENT_END_DATE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYMENT_END_DATE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EMPLOYER_NAME]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_NAME</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_BUSINESS_DBA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EMPLOYER_BUSINESS_DBA]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_BUSINESS_DBA</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_ADDRESS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EMPLOYER_ADDRESS]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_ADDRESS</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EMPLOYER_CITY]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_CITY</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EMPLOYER_STATE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_STATE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_POSTAL_CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EMPLOYER_POSTAL_CODE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_POSTAL_CODE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EMPLOYER_COUNTRY]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_COUNTRY</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_PROVINCE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EMPLOYER_PROVINCE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_PROVINCE</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_PHONE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EMPLOYER_PHONE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_PHONE</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMPLOYER_PHONE_EXT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EMPLOYER_PHONE_EXT]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>EMPLOYER_PHONE_EXT</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGENT_REPRESENTING_EMPLOYER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AGENT_REPRESENTING_EMPLOYER]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>AGENT_REPRESENTING_EMPLOYER</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGENT_ATTORNEY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AGENT_ATTORNEY_NAME]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>AGENT_ATTORNEY_NAME</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGENT_ATTORNEY_CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AGENT_ATTORNEY_CITY]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>AGENT_ATTORNEY_CITY</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGENT_ATTORNEY_STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AGENT_ATTORNEY_STATE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>AGENT_ATTORNEY_STATE</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JOB_TITLE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JOB_TITLE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>JOB_TITLE</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOC_CODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOC_CODE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>SOC_CODE</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOC_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOC_NAME]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>SOC_NAME</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICS_CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NAICS_CODE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>NAICS_CODE</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL_WORKERS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL_WORKERS]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>TOTAL_WORKERS</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NEW_EMPLOYMENT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NEW_EMPLOYMENT]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>NEW_EMPLOYMENT</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONTINUED_EMPLOYMENT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CONTINUED_EMPLOYMENT]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>CONTINUED_EMPLOYMENT</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHANGE_PREVIOUS_EMPLOYMENT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CHANGE_PREVIOUS_EMPLOYMENT]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>CHANGE_PREVIOUS_EMPLOYMENT</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NEW_CONCURRENT_EMP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NEW_CONCURRENT_EMP]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>NEW_CONCURRENT_EMP</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHANGE_EMPLOYER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CHANGE_EMPLOYER]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>CHANGE_EMPLOYER</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMENDED_PETITION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AMENDED_PETITION]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>AMENDED_PETITION</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FULL_TIME_POSITION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FULL_TIME_POSITION]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>FULL_TIME_POSITION</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREVAILING_WAGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PREVAILING_WAGE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>PREVAILING_WAGE</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PW_UNIT_OF_PAY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PW_UNIT_OF_PAY]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>PW_UNIT_OF_PAY</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PW_WAGE_LEVEL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PW_WAGE_LEVEL]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>PW_WAGE_LEVEL</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PW_SOURCE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PW_SOURCE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>PW_SOURCE</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PW_SOURCE_YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PW_SOURCE_YEAR]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>PW_SOURCE_YEAR</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PW_SOURCE_OTHER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PW_SOURCE_OTHER]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>PW_SOURCE_OTHER</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAGE_RATE_OF_PAY_FROM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAGE_RATE_OF_PAY_FROM]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>WAGE_RATE_OF_PAY_FROM</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAGE_RATE_OF_PAY_TO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAGE_RATE_OF_PAY_TO]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>WAGE_RATE_OF_PAY_TO</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAGE_UNIT_OF_PAY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WAGE_UNIT_OF_PAY]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>WAGE_UNIT_OF_PAY</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>H1B_DEPENDENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[H1B_DEPENDENT]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>H1B_DEPENDENT</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WILLFUL_VIOLATOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WILLFUL_VIOLATOR]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>WILLFUL_VIOLATOR</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUPPORT_H1B</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUPPORT_H1B]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>SUPPORT_H1B</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LABOR_CON_AGREE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LABOR_CON_AGREE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>LABOR_CON_AGREE</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PUBLIC_DISCLOSURE_LOCATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PUBLIC_DISCLOSURE_LOCATION]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>PUBLIC_DISCLOSURE_LOCATION</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WORKSITE_CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WORKSITE_CITY]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>WORKSITE_CITY</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WORKSITE_COUNTY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WORKSITE_COUNTY]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>WORKSITE_COUNTY</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WORKSITE_STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WORKSITE_STATE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>WORKSITE_STATE</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WORKSITE_POSTAL_CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WORKSITE_POSTAL_CODE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>WORKSITE_POSTAL_CODE</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIGINAL_CERT_DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ORIGINAL_CERT_DATE]</local-name>
+            <parent-name>[H-1B_Disclosure_Data_18.csv]</parent-name>
+            <remote-alias>ORIGINAL_CERT_DATE</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Agent Attorney City' datatype='string' name='[AGENT_ATTORNEY_CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Agent Attorney Name' datatype='string' name='[AGENT_ATTORNEY_NAME]' role='dimension' type='nominal' />
+      <column caption='Agent Attorney State' datatype='string' name='[AGENT_ATTORNEY_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Agent Representing Employer' datatype='string' name='[AGENT_REPRESENTING_EMPLOYER]' role='dimension' type='nominal' />
+      <column caption='Amended Petition' datatype='integer' name='[AMENDED_PETITION]' role='measure' type='quantitative' />
+      <column caption='Case Number' datatype='string' name='[CASE_NUMBER]' role='dimension' type='nominal' />
+      <column caption='Case Status' datatype='string' name='[CASE_STATUS]' role='dimension' type='nominal' />
+      <column caption='Case Submitted' datatype='date' name='[CASE_SUBMITTED]' role='dimension' type='ordinal' />
+      <column caption='Change Employer' datatype='integer' name='[CHANGE_EMPLOYER]' role='measure' type='quantitative' />
+      <column caption='Change Previous Employment' datatype='integer' name='[CHANGE_PREVIOUS_EMPLOYMENT]' role='measure' type='quantitative' />
+      <column caption='Continued Employment' datatype='integer' name='[CONTINUED_EMPLOYMENT]' role='measure' type='quantitative' />
+      <column caption='Decision Date' datatype='date' name='[DECISION_DATE]' role='dimension' type='ordinal' />
+      <column caption='Employer Address' datatype='string' name='[EMPLOYER_ADDRESS]' role='dimension' type='nominal' />
+      <column caption='Employer Business Dba' datatype='string' name='[EMPLOYER_BUSINESS_DBA]' role='dimension' type='nominal' />
+      <column caption='Employer City' datatype='string' name='[EMPLOYER_CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Employer Country' datatype='string' name='[EMPLOYER_COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Employer Name' datatype='string' name='[EMPLOYER_NAME]' role='dimension' type='nominal' />
+      <column caption='Employer Phone' datatype='real' name='[EMPLOYER_PHONE]' role='measure' type='quantitative' />
+      <column caption='Employer Phone Ext' datatype='integer' name='[EMPLOYER_PHONE_EXT]' role='measure' type='quantitative' />
+      <column caption='Employer Postal Code' datatype='integer' name='[EMPLOYER_POSTAL_CODE]' role='dimension' type='ordinal' />
+      <column caption='Employer Province' datatype='string' name='[EMPLOYER_PROVINCE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Employer State' datatype='string' name='[EMPLOYER_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Employment End Date' datatype='date' name='[EMPLOYMENT_END_DATE]' role='dimension' type='ordinal' />
+      <column caption='Employment Start Date' datatype='date' name='[EMPLOYMENT_START_DATE]' role='dimension' type='ordinal' />
+      <column caption='Full Time Position' datatype='string' name='[FULL_TIME_POSITION]' role='dimension' type='nominal' />
+      <column caption='H1B Dependent' datatype='string' name='[H1B_DEPENDENT]' role='dimension' type='nominal' />
+      <column caption='Job Title' datatype='string' name='[JOB_TITLE]' role='dimension' type='nominal' />
+      <column caption='Labor Con Agree' datatype='string' name='[LABOR_CON_AGREE]' role='dimension' type='nominal' />
+      <column caption='Naics Code' datatype='integer' name='[NAICS_CODE]' role='dimension' type='ordinal' />
+      <column caption='New Concurrent Emp' datatype='integer' name='[NEW_CONCURRENT_EMP]' role='measure' type='quantitative' />
+      <column caption='New Employment' datatype='integer' name='[NEW_EMPLOYMENT]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Original Cert Date' datatype='date' name='[ORIGINAL_CERT_DATE]' role='dimension' type='ordinal' />
+      <column caption='Prevailing Wage' datatype='real' name='[PREVAILING_WAGE]' role='measure' type='quantitative' />
+      <column caption='Public Disclosure Location' datatype='string' name='[PUBLIC_DISCLOSURE_LOCATION]' role='dimension' type='nominal' />
+      <column caption='Pw Source' datatype='string' name='[PW_SOURCE]' role='dimension' type='nominal' />
+      <column caption='Pw Source Other' datatype='string' name='[PW_SOURCE_OTHER]' role='dimension' type='nominal' />
+      <column caption='Pw Source Year' datatype='integer' name='[PW_SOURCE_YEAR]' role='dimension' type='quantitative' />
+      <column caption='Pw Unit Of Pay' datatype='string' name='[PW_UNIT_OF_PAY]' role='dimension' type='nominal' />
+      <column caption='Pw Wage Level' datatype='string' name='[PW_WAGE_LEVEL]' role='dimension' type='nominal' />
+      <column caption='Soc Code' datatype='string' name='[SOC_CODE]' role='dimension' type='nominal' />
+      <column caption='Soc Name' datatype='string' name='[SOC_NAME]' role='dimension' type='nominal' />
+      <column caption='Support H1B' datatype='string' name='[SUPPORT_H1B]' role='dimension' type='nominal' />
+      <column caption='Total Workers' datatype='integer' name='[TOTAL_WORKERS]' role='measure' type='quantitative' />
+      <column caption='Visa Class' datatype='string' name='[VISA_CLASS]' role='dimension' type='nominal' />
+      <column caption='Wage Rate Of Pay From' datatype='real' name='[WAGE_RATE_OF_PAY_FROM]' role='measure' type='quantitative' />
+      <column caption='Wage Rate Of Pay To' datatype='real' name='[WAGE_RATE_OF_PAY_TO]' role='measure' type='quantitative' />
+      <column caption='Wage Unit Of Pay' datatype='string' name='[WAGE_UNIT_OF_PAY]' role='dimension' type='nominal' />
+      <column caption='Willful Violator' datatype='string' name='[WILLFUL_VIOLATOR]' role='dimension' type='nominal' />
+      <column caption='Worksite City' datatype='string' name='[WORKSITE_CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Worksite County' datatype='string' name='[WORKSITE_COUNTY]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Worksite Postal Code' datatype='integer' name='[WORKSITE_POSTAL_CODE]' role='dimension' type='ordinal' />
+      <column caption='Worksite State' datatype='string' name='[WORKSITE_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.556319' measure-ordering='alphabetic' measure-percentage='0.443681' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H-1B_Disclosure_Data_18' name='federated.0occcyx172db2z14r62yc1632rts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0occcyx172db2z14r62yc1632rts'>
+            <column caption='Case Status' datatype='string' name='[CASE_STATUS]' role='dimension' type='nominal' />
+            <column-instance column='[CASE_STATUS]' derivation='Count' name='[cnt:CASE_STATUS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CASE_STATUS]' derivation='None' name='[none:CASE_STATUS:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0occcyx172db2z14r62yc1632rts].[cnt:CASE_STATUS:qk]</rows>
+        <cols>[federated.0occcyx172db2z14r62yc1632rts].[none:CASE_STATUS:nk]</cols>
+      </table>
+      <simple-id uuid='{850AEBC4-C2AE-4A71-84F1-9855D8E1735B}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H-1B_Disclosure_Data_18' name='federated.0occcyx172db2z14r62yc1632rts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0occcyx172db2z14r62yc1632rts'>
+            <column caption='Case Status' datatype='string' name='[CASE_STATUS]' role='dimension' type='nominal' />
+            <column caption='Full Time Position' datatype='string' name='[FULL_TIME_POSITION]' role='dimension' type='nominal' />
+            <column caption='Wage Rate Of Pay From' datatype='real' name='[WAGE_RATE_OF_PAY_FROM]' role='measure' type='quantitative' />
+            <column-instance column='[CASE_STATUS]' derivation='None' name='[none:CASE_STATUS:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FULL_TIME_POSITION]' derivation='None' name='[none:FULL_TIME_POSITION:nk]' pivot='key' type='nominal' />
+            <column-instance column='[WAGE_RATE_OF_PAY_FROM]' derivation='Sum' name='[sum:WAGE_RATE_OF_PAY_FROM:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0occcyx172db2z14r62yc1632rts].[none:CASE_STATUS:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0occcyx172db2z14r62yc1632rts].[sum:WAGE_RATE_OF_PAY_FROM:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0occcyx172db2z14r62yc1632rts].[sum:WAGE_RATE_OF_PAY_FROM:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0occcyx172db2z14r62yc1632rts].[sum:WAGE_RATE_OF_PAY_FROM:qk]</rows>
+        <cols>[federated.0occcyx172db2z14r62yc1632rts].[none:FULL_TIME_POSITION:nk]</cols>
+      </table>
+      <simple-id uuid='{2B74E6E6-037F-4863-9B31-2A78B466B20B}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H-1B_Disclosure_Data_18' name='federated.0occcyx172db2z14r62yc1632rts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0occcyx172db2z14r62yc1632rts'>
+            <column caption='Case Status' datatype='string' name='[CASE_STATUS]' role='dimension' type='nominal' />
+            <column caption='Prevailing Wage' datatype='real' name='[PREVAILING_WAGE]' role='measure' type='quantitative' />
+            <column-instance column='[CASE_STATUS]' derivation='None' name='[none:CASE_STATUS:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PREVAILING_WAGE]' derivation='Sum' name='[sum:PREVAILING_WAGE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0occcyx172db2z14r62yc1632rts].[sum:PREVAILING_WAGE:qk]</rows>
+        <cols>[federated.0occcyx172db2z14r62yc1632rts].[none:CASE_STATUS:nk]</cols>
+      </table>
+      <simple-id uuid='{6210533C-9938-47B5-B896-5C3EB7329588}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0occcyx172db2z14r62yc1632rts].[none:CASE_STATUS:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{49AEE7C1-B816-4029-A568-A83776B8B140}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0occcyx172db2z14r62yc1632rts].[none:CASE_STATUS:nk]</field>
+            <field>[federated.0occcyx172db2z14r62yc1632rts].[none:FULL_TIME_POSITION:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{52011397-6EFE-4D39-9773-CCB114C2254C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0occcyx172db2z14r62yc1632rts].[none:CASE_STATUS:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A6E53298-2B9D-4E9D-ADE4-B725842BC93A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      9f8BgsV6VxBZQe4AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
